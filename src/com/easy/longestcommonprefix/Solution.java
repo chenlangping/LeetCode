@@ -17,13 +17,13 @@ public class Solution {
         }
     }
 
-    /*
+
     public static void main(String[] args) {
         Solution solution = new Solution();
         String [] strs = {"aflower","flow","flight"};//这里我觉得应该返回"fl"，实际上应该需要返回""
         System.out.print(solution.longestCommonPrefix(strs));
     }
-    */
+
 
 
 }

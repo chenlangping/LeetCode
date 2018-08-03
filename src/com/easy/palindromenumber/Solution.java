@@ -22,11 +22,10 @@ public class Solution {
 
     }
 
-    /*
+
     public static void main(String[] args){
         Solution solution = new Solution();
         int x = 10;
         System.out.print(solution.isPalindrome(x));
     }
-    */
 }

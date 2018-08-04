@@ -1,4 +1,4 @@
-package com.easy.palindromenumber;
+package com.easy.palindromeNumber;
 
 public class Solution {
     public boolean isPalindrome(int x) {
@@ -28,4 +28,6 @@ public class Solution {
         int x = 10;
         System.out.print(solution.isPalindrome(x));
     }
+
+
 }

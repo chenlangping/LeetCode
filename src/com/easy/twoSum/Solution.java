@@ -1,4 +1,4 @@
-package com.easy.twosum;
+package com.easy.twoSum;
 import java.util.Arrays;
 public class Solution {
 

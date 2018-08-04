@@ -1,4 +1,4 @@
-package com.easy.jewelsandstones;
+package com.easy.jewelsAndStones;
 
 public class Solution {
     public int numJewelsInStones(String J, String S) {

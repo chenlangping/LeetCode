@@ -1,4 +1,4 @@
-package com.easy.reverseinteger;
+package com.easy.reverseInteger;
 
 public class Solution {
     public int reverse(int x) {

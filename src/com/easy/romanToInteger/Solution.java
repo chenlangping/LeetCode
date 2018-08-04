@@ -1,4 +1,4 @@
-package com.easy.romantointeger;
+package com.easy.romanToInteger;
 
 /**
  * 思路：首先判断是不是4 9 这类的特定组合；不是就可以直接加；

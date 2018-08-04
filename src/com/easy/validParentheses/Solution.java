@@ -1,4 +1,4 @@
-package com.easy.validparentheses;
+package com.easy.validParentheses;
 
 public class Solution {
     public boolean isValid(String s) {

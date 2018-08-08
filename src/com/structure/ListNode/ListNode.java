@@ -1,10 +1,30 @@
 package com.structure.ListNode;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class ListNode {
     public int val;
     public ListNode next;
     public ListNode(int x) {
         val = x;
+    }
+    public int size;
+
+    /**
+     * 生成一个新的节点，将x的内容增加到链表中
+     * @param x
+     */
+    public void add(int x){
+        while(next !=null){
+
+        }
+
+        size ++;
+    }
+
+    public int getSize(){
+        return this.size;
     }
 
     public static ListNode createTestData(String data) {
@@ -21,6 +41,10 @@ public class ListNode {
         return listNode[0];
     }
 
+    /**
+     * 打印一个指定链表的所有内容
+     * @param listNode
+     */
     public static void print(ListNode listNode) {
         if (listNode == null) {
             System.out.println("null");

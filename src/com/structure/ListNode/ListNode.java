@@ -9,24 +9,6 @@ public class ListNode {
     public ListNode(int x) {
         val = x;
     }
-    public int size;
-
-    /**
-     * 生成一个新的节点，将x的内容增加到链表中
-     * @param x
-     */
-    public void add(int x){
-        while(next !=null){
-
-        }
-
-        size ++;
-    }
-
-    public int getSize(){
-        return this.size;
-    }
-
     public static ListNode createTestData(String data) {
         if (data.equals("")) return null;
         //用->作为分隔符
@@ -38,6 +20,7 @@ public class ListNode {
             listNode[i] = new ListNode(Integer.valueOf(split[i]));
             listNode[i - 1].next = listNode[i];
         }
+        //listNode[len] = null;不需要 默认就是Null
         return listNode[0];
     }
 

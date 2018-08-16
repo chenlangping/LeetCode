@@ -407,4 +407,79 @@ public class myFileIO {
         }
         return false;
     }
+
+    /**
+     * 从文件中读取byte[]
+     * @param srcFilePath 要读取的文件的地址
+     * @return
+     */
+    public byte[] getBytesFromFile(String srcFilePath){
+        File src = new File(srcFilePath);
+        byte[] dest = null;
+        InputStream is = null;
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try {
+            is = new BufferedInputStream(new FileInputStream(src));
+            byte[] data = new byte[DATA_LENGTH];
+            int len = 0;
+            while(-1!=(len = is.read(data))){
+                baos.write(data,0,len);
+            }
+            baos.flush();
+            dest = baos.toByteArray();
+        } catch (FileNotFoundException e) {
+            System.out.println("文件未找到");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("文件读取异常");
+            e.printStackTrace();
+        } finally {
+            try {
+                baos.close();
+                is.close();
+            } catch (IOException e) {
+                System.out.println("文件关闭异常");
+                e.printStackTrace();
+            }
+
+        }
+
+        return dest;
+    }
+
+    /**
+     * 将指定的字节写入到指定路径的文件中
+     * @param destFilePath 目标文件的地址
+     * @param src 源字节
+     */
+    public void writeBytesToFile(String destFilePath,byte[]src){
+        File dest = new File(destFilePath);
+
+        InputStream is = new BufferedInputStream(new ByteArrayInputStream(src));
+        OutputStream os = null;
+        try {
+            os = new BufferedOutputStream(new FileOutputStream(dest));
+            byte [] data = new byte[DATA_LENGTH];
+            int len = 0;
+            while(-1!=(len = is.read(data))){
+                os.write(data,0,len);
+            }
+            os.flush();
+        } catch (FileNotFoundException e) {
+            System.out.println("文件未找到");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("文件读取异常");
+            e.printStackTrace();
+        } finally {
+            try {
+                os.close();
+            } catch (IOException e) {
+                System.out.println("文件关闭异常");
+                e.printStackTrace();
+            }
+        }
+    }
+
+
 }

@@ -1,15 +1,13 @@
 package com.util;
 
+import java.io.File;
+import java.io.IOException;
+
 public class Test {
     public static void main(String[] args) {
-        myLinkedList list = new myLinkedList();
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        //list.add(4,"555");
-        list.set(4,"5");
-        list.print();
+        myFileIO f = new myFileIO();
+        File src = new File("F:/iotest/1.txt");
+        System.out.println(f.readFile("F:/iotest/10.txt"));
 
     }
 }

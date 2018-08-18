@@ -1,6 +1,6 @@
 # LeetCode
 ### LeetCode刷题记录<br>
-* 2018年7月27日    001<br>
+* [2018年7月27日    001<br>](https://www.jianshu.com/p/b5b44e9a82ae) 
 * 2018年7月29日    007<br>
 * 2018年7月30日    009<br>
 * 2018年7月31日    013<br>

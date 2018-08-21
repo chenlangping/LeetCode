@@ -8,7 +8,7 @@ public class myArray {
      * @param i 下标1
      * @param j 下标2
      */
-    public void swap(int[] array, int i, int j){
+    public static void swap(int[] array, int i, int j){
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;

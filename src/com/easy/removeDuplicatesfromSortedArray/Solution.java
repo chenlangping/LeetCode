@@ -3,16 +3,17 @@ package com.easy.removeDuplicatesfromSortedArray;
 public class Solution {
     public int removeDuplicates(int[] nums) {
         int length = nums.length;
-        if(length == 0 ) return 0;
-        int j = 0;
-        for (int i = 1 ;i<length;i++){
-            if (nums[i] != nums[j]){
-                j++;
-                nums[j] = nums[i];
-
+        if (length == 0) {
+            return 0;
+        }
+        int count = 0;
+        for (int i = 1; i < length; i++) {
+            if (nums[i] != nums[count]) {
+                count++;
+                nums[count] = nums[i];
             }
         }
-        return j + 1;
+        return count + 1;
     }
 
     /*

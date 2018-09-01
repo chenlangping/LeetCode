@@ -1,19 +1,12 @@
 package com.util;
 
 
-import com.medium.minimumPathSum.Solution;
-
+import com.easy.plusOne.*;
 public class Test {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int [][]nums2 = {
-                {1,0,1}
-        };
-        int [][]nums= {
-                {1, 3, 1},
-                {1, 5, 1},
-                {4, 2, 1}
-            };
-        System.out.println(solution.minPathSum(nums2));
+        int []digit = {3,4,1};
+        int [] result = solution.plusOne(digit);
+        System.out.println(result);
     }
 }

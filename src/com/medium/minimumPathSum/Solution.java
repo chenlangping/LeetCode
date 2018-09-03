@@ -18,14 +18,11 @@ public class Solution {
             result[0][j] = grid[0][j] + result[0][j - 1];
         }
 
-        //com.structure.Matrix.Matrix.print(result);
-
         for (int i = 1; i < grid.length; i++) {
             for (int j = 1; j < grid[0].length; j++) {
                 result[i][j] = grid[i][j] + Math.min(result[i - 1][j], result[i][j - 1]);
             }
         }
-        //com.structure.Matrix.Matrix.print(result);
         return result[grid.length - 1][grid[0].length - 1];
     }
 }

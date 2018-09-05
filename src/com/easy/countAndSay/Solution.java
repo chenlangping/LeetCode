@@ -2,29 +2,29 @@ package com.easy.countAndSay;
 
 public class Solution {
     public String countAndSay(int n) {
-        if(n<=0) {
+        if (n <= 0) {
             return "";
         }
-        if (n ==1 ) {
+        if (1 == n) {
             return "1";
         }
-        if (n==2) {
+        if (2 == n) {
             return "11";
-        }else {
+        } else {
             //递归实现
-            String str = countAndSay(n-1);
+            String str = countAndSay(n - 1);
             StringBuilder stringBuilder = new StringBuilder();
-            char [] a = str.toCharArray();
-            int count = 1 ;
-            for(int i = 0 ; i < a.length-1;i++){
-                if(a[i] == a[i+1] ){
+            char[] a = str.toCharArray();
+            int count = 1;
+            for (int i = 0; i < a.length - 1; i++) {
+                if (a[i] == a[i + 1]) {
                     count++;
-                }else {
+                } else {
                     stringBuilder.append(count).append(a[i]);
                     count = 1;
                 }
             }
-            stringBuilder.append(count).append(a[a.length -1]);
+            stringBuilder.append(count).append(a[a.length - 1]);
             return stringBuilder.toString();
         }
     }

@@ -1,22 +1,13 @@
 package com.test;
 
-import com.medium.wordSearch.*;
+import com.medium.removeduplicatesfromsortedarrayII.Solution;
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        char[][] board = {
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'D', 'E', 'E'}
-        };
-        char[][]board2 = {
-                {'a'},
-                {'a'}
-        };
-        String target = "aaa";
-        System.out.println(solution.exist(board2,target));
+        int[] nums = {1, 1, 1, 2, 2, 3};
+        System.out.println(solution.removeDuplicates(nums));
     }
 
 

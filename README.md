@@ -15,7 +15,7 @@
 * [2018年8月5日     073<br>](https://www.jianshu.com/p/016ee54b29d9)
 * [2018年8月6日     035<br>](https://www.jianshu.com/p/0cfbbc37106f)
 * [2018年8月7日     038<br>](https://www.jianshu.com/p/dc33178f5554)
-* 2018年8月8日     002<br>
+* [2018年8月8日     002<br>](https://www.jianshu.com/p/1fec3c7361e0)
 * 2018年8月9日     004<br>
 * 2018年8月10日    022<br>
 * 2018年8月11日    023<br>

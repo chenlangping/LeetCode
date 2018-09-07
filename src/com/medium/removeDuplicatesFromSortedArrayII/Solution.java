@@ -1,4 +1,4 @@
-package com.medium.removeduplicatesfromsortedarrayII;
+package com.medium.removeDuplicatesFromSortedArrayII;
 
 public class Solution {
     public int removeDuplicates(int[] nums) {

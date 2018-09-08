@@ -1,14 +1,14 @@
 package com.test;
 
-import com.medium.searchinRotatedSortedArrayII.*;
+import com.medium.removeDuplicatesFromSortedList.Solution;
+import com.structure.ListNode.ListNode;
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int nums[]= {1,3,1,1,1};
-        int target = 3;
-        System.out.println(solution.search(nums,target));
+        ListNode listNode = ListNode.createTestData("1->1->2->3->3");
+        ListNode.print(solution.deleteDuplicates(listNode));
     }
 
 

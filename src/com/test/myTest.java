@@ -1,15 +1,18 @@
 package com.test;
 
-import com.medium.subsetsII.Solution;
+import com.medium.findFirstAndLastPositionOfElementinSortedArray.Solution;
 
 import java.util.Arrays;
 
 public class myTest {
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
-        int []nums={4,4,4,1,4};
-        System.out.println(solution.subsetsWithDup(nums));
+        com.medium.findFirstAndLastPositionOfElementinSortedArray.Solution solution = new Solution();
+        int nums[] = {2, 2};
+        int target = 2;
+        int[] result = new int[2];
+        result = solution.searchRange(nums, target);
+        System.out.println(result[0] + " " + result[1]);
     }
 
 

@@ -19,13 +19,13 @@
 * 2018年8月9日     004<br>
 * 2018年8月10日    022<br>
 * 2018年8月11日    023<br>
-* 2018年8月12日    039<br>
+* [2018年8月12日    039<br>](https://www.jianshu.com/p/f0f65d93a4f4)
 * 2018年8月13日    015<br>
 * 2018年8月14日    016<br>
 * 2018年8月15日    018<br>
 * [2018年8月16日    033<br>](https://www.jianshu.com/p/0cbe01911fa0)
 * [2018年8月17日    034<br>](https://www.jianshu.com/p/b3a8ef3a7932)
-* 2018年8月18日    040<br>
+* [2018年8月18日    040<br>](https://www.jianshu.com/p/ffd239423f82)
 * [2018年8月19日    041<br>](https://www.jianshu.com/p/5e350ff8e552)
 * [2018年8月20日    042<br>](https://www.jianshu.com/p/d66944915365)
 * [2018年8月21日    048<br>](https://www.jianshu.com/p/13bfb8ca3f51)

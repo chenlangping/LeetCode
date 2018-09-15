@@ -1,14 +1,14 @@
 package com.test;
 
-import com.hard.largestRectangleInHistogram.*;
+import com.easy.lengthOfLastWord.*;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int nums[] = {2,3};
-        System.out.println(solution.largestRectangleArea(nums));
+        String s = "hello wor d";
+        System.out.println(solution.lengthOfLastWord(s));
     }
 
 

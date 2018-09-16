@@ -31,8 +31,8 @@ public class Solution {
             right[i] = j;
         }
         //此时已经算出来每条柱子最左边和最右边的了
-        System.out.println(Arrays.toString(left));
-        System.out.println(Arrays.toString(right));
+        //System.out.println(Arrays.toString(left));
+        //System.out.println(Arrays.toString(right));
 
         //计算面积
         for (int i = 0; i < heights.length; i++) {

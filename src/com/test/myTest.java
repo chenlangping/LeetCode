@@ -1,17 +1,14 @@
 package com.test;
 
-import com.easy.sameTree.*;
-import com.structure.TreeNode.TreeNode;
+import com.easy.singleNumber.*;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        TreeNode p = TreeNode.createTestData("[1,2,3]");
-        TreeNode q = TreeNode.createTestData("[2,3,1]");
-        System.out.println(solution.isSameTree(p,q));
-        //TreeNode.print(p);
+        int []nums = {1,1,2,2,3};
+        System.out.println(solution.singleNumber(nums));
     }
 
 

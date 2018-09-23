@@ -1,4 +1,4 @@
-package com.easy.bestTimeToBuyandSellStock;
+package com.easy.bestTimeToBuyAndSellStock;
 
 public class Solution {
     public int maxProfit(int[] prices) {

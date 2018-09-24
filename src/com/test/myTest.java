@@ -1,16 +1,15 @@
 package com.test;
 
-import com.easy.bestTimeToBuyAndSellStockII.*;
-
+import com.medium.removeNthNodeFromEndOfList.*;
+import com.structure.ListNode.ListNode;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int []prices= {7,6,4,3,1};
-
-        System.out.println(solution.maxProfit(prices));
+        ListNode listNode = ListNode.createTestData("1->2->3->4->5");
+        ListNode.print(solution.removeNthFromEnd(listNode,3));
     }
 
 

@@ -1,14 +1,14 @@
 package com.test;
 
-import com.medium.longestSubstringWithoutRepeatingCharacters.*;
+import com.medium.stringToInteger.*;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "";
-        System.out.println(solution.lengthOfLongestSubstring(s));
+        String s = "-2147483649";
+        System.out.println(solution.myAtoi(s));
     }
 
 

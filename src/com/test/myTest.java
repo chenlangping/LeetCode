@@ -1,6 +1,6 @@
 package com.test;
 
-import com.easy.validPalindrome.*;
+import com.medium.divideTwoIntegers.*;
 
 
 
@@ -8,8 +8,10 @@ public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "0p";
-        System.out.println(solution.isPalindrome(s));
+        int a = 2147483647;
+        int b = 2;
+        System.out.println(solution.divide(a,b));
+        System.out.println(a/b);
     }
 
 

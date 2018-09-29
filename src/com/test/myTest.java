@@ -1,6 +1,6 @@
 package com.test;
 
-import com.medium.divideTwoIntegers.*;
+import com.easy.sqrt.*;
 
 
 
@@ -8,10 +8,8 @@ public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int a = 2147483647;
-        int b = 2;
-        System.out.println(solution.divide(a,b));
-        System.out.println(a/b);
+        int a = Integer.MAX_VALUE;
+        System.out.println(solution.mySqrt(101));
     }
 
 

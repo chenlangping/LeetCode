@@ -1,6 +1,6 @@
 package com.test;
 
-import com.easy.sqrt.*;
+import com.medium.integerToRoman.*;
 
 
 
@@ -8,8 +8,12 @@ public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int a = Integer.MAX_VALUE;
-        System.out.println(solution.mySqrt(101));
+        /*for(int i =1;i<4000;i++){
+            System.out.println(solution.intToRoman(i));
+        }*/
+        System.out.println(solution.intToRoman(1994));
+
+
     }
 
 

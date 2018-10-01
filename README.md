@@ -69,5 +69,6 @@
 * [2018年9月25日    003<br>](https://www.jianshu.com/p/306c8bd52c0a)
 * [2018年9月26日    008<br>](https://www.jianshu.com/p/c0b93d19a207)
 * [2018年9月27日    125<br>](https://www.jianshu.com/p/c3edca49b364)
-* [2018年9月27日    <br>]()
-* [2018年9月27日    069<br>](https://www.jianshu.com/p/a2215d490b48)
+* [2018年9月28日    <br>]()
+* [2018年9月29日    069<br>](https://www.jianshu.com/p/a2215d490b48)
+* [2018年10月1日    012<br>](https://www.jianshu.com/p/5fbfc6b86fe5)

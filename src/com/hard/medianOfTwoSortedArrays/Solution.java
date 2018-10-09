@@ -55,10 +55,33 @@ public class Solution {
         }
     }
 
+    /**
+     * 仅适用于两个长度相同的数组找中位数
+     * @param nums1
+     * @param nums2
+     * @return
+     */
+    public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
+        int k = (nums1.length + nums2.length) / 2;
+        return getMedian(k, nums1, nums2, 0, 0);
+    }
+
+    public double getMedian(int k, int[] nums1, int[] nums2, int start1, int start2) {
+        if (k == 0) {
+            return Math.min(nums1[start1], nums2[start2]);
+        }
+        k = k / 2;
+        if (nums1[start1 + k] < nums2[start2 + k]) {
+            return getMedian(k, nums1, nums2, start1 + k, start2);
+        } else {
+            return getMedian(k, nums1, nums2, start1, start2 + k);
+        }
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums1 = {};
-        int[] nums2 = {2, 5, 7, 8, 9, 10};
-        System.out.println(solution.findMedianSortedArrays(nums1, nums2));
+        int[] nums1 = {1, 3, 4, 6, 10};
+        int[] nums2 = {2, 5, 7, 8, 9};
+        System.out.println(solution.findMedianSortedArrays2(nums1, nums2));
     }
 }

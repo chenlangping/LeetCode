@@ -1,15 +1,15 @@
 package com.test;
 
-import com.medium.ZigZagConversion.Solution;
+import com.easy.maximumDepthOfBinaryTree.Solution;
+import com.structure.TreeNode.TreeNode;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = "0123456789a";
-        int numRows = 4;
-        System.out.println(solution.convert(s,numRows));
+        TreeNode root = TreeNode.createTestData("[2,3,3,4,null,4,null,5,5,null,null,5,null,null,null]");
+        System.out.println(solution.maxDepth(root));
     }
 
 

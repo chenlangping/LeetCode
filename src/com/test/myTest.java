@@ -1,15 +1,18 @@
 package com.test;
 
-import com.easy.maximumDepthOfBinaryTree.Solution;
-import com.structure.TreeNode.TreeNode;
+import com.medium.kthLargestElementInAnArray.Solution;
 
 
 public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        TreeNode root = TreeNode.createTestData("[2,3,3,4,null,4,null,5,5,null,null,5,null,null,null]");
-        System.out.println(solution.maxDepth(root));
+        int[] nums = {5, 6, 4};
+        int k = 1;
+
+        System.out.println(solution.findKthLargest2(nums, k));
+
+
     }
 
 

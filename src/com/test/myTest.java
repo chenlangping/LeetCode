@@ -11,7 +11,6 @@ public class myTest {
         ListNode listNode = ListNode.createTestData("1->2->3->4->5->6");
         int k = 3;
         ListNode.print(solution.reverseKGroup(listNode, k));
-        ListNode.print(solution.reverseKGroup2(listNode, k));
 
 
     }

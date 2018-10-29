@@ -1,11 +1,13 @@
 package com.medium.uniquePaths;
 
+import com.util.Time;
+
 public class Solution {
-    public int uniquePaths(int m, int n) {
+    public long uniquePaths(int m, int n) {
         if (m <= 0 || n <= 0) {
             return 0;
         }
-        int[][] result = new int[m][n];
+        long[][] result = new long[m][n];
         //最左边的竖的一列
         for (int i = 0; i < m; i++) {
             result[i][0] = 1;
@@ -22,4 +24,5 @@ public class Solution {
         }
         return result[m - 1][n - 1];
     }
+
 }

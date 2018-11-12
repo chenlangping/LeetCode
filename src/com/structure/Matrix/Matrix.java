@@ -23,6 +23,11 @@ public class Matrix {
         }
     }
 
+    /**
+     * 打印目标矩阵
+     *
+     * @param matrix 目标矩阵
+     */
     public static void print(boolean[][] matrix) {
         int rows = matrix.length;//行数
         int columns = matrix[0].length;//列数

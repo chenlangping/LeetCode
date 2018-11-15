@@ -1,7 +1,7 @@
 # LeetCode
 ### LeetCode刷题记录<br>
 
-#### 待优化：003 029 240 025 282
+#### 待优化：003 029 240 025 282 060
 
 * [2018年7月27日    001<br>](https://www.jianshu.com/p/b5b44e9a82ae) 
 * [2018年7月29日    007<br>](https://www.jianshu.com/p/73d788502bcf)
@@ -94,3 +94,4 @@
 * [2018年11月12日    043<br>](https://www.jianshu.com/p/1207b9dc42a6)
 * [2018年11月13日    047<br>](https://www.jianshu.com/p/887834707c22)
 * [2018年11月14日    050<br>](https://www.jianshu.com/p/94189d2d353c)
+* [2018年11月15日    060<br>]()

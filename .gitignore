@@ -1,4 +1,8 @@
 .DS_Store
 src/com/hard/topKthPath/*
 out/
+### IntelliJ IDEA ###
 .idea
+*.iws
+*.iml
+*.ipr

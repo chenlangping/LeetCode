@@ -21,11 +21,22 @@ public class Solution {
             for (int i = 0; i < size; i++) {
                 TreeNode node = q.poll();
                 list.add(node.val);
-                if (node.left != null) q.add(node.left);
-                if (node.right != null) q.add(node.right);
+                if (node.left != null) {
+                    q.add(node.left);
+                }
+                if (node.right != null) {
+                    q.add(node.right);
+                }
             }
             res.add(0, list);
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        TreeNode treeNode = TreeNode.createTestData("[3,9,20,null,null,15,7]");
+        Solution solution = new Solution();
+        System.out.println(solution.levelOrderBottom(treeNode));
+
     }
 }

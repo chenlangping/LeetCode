@@ -37,6 +37,5 @@ public class Solution {
         TreeNode treeNode = TreeNode.createTestData("[3,9,20,null,null,15,7]");
         Solution solution = new Solution();
         System.out.println(solution.levelOrderBottom(treeNode));
-
     }
 }

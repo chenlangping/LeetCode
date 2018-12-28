@@ -1,5 +1,6 @@
 .DS_Store
 src/com/hard/topKthPath/*
+src/temporary
 out/
 ### IntelliJ IDEA ###
 .idea

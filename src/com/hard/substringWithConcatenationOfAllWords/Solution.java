@@ -13,7 +13,7 @@ public class Solution {
             return res;
         }
 
-        //每个单词的长度
+        //每个单词的长度 #题中说了每个单词长度一样
         int wordLen = words[0].length();
 
         //把所有单词放进map1里面
@@ -25,20 +25,18 @@ public class Solution {
                 res.add(i);
             }
         }
-
         return res;
     }
 
     //用所给的字符串，指定开始，并且指定每个单词的长度，来构造map
-    public Map<String, Integer> getMap(int start, int wordLen, int numOfWord, String s) {
+    private Map<String, Integer> getMap(int start, int wordLen, int numOfWord, String s) {
         String words[] = new String[numOfWord];
         int j = 0;
-        for (int i = start; i < start +numOfWord * wordLen; i = i + wordLen) {
+        for (int i = start; i < start + numOfWord * wordLen; i = i + wordLen) {
             words[j] = s.substring(i, i + wordLen);
             j++;
         }
-        Map<String, Integer> map = stringToMap(words, numOfWord);
-        return map;
+        return stringToMap(words, numOfWord);
     }
 
     private Map<String, Integer> stringToMap(String words[], int numOfWord) {
@@ -62,7 +60,6 @@ public class Solution {
             Map.Entry<String, Integer> entry1 = iter1.next();
             int m1value = entry1.getValue() == null ? -1 : entry1.getValue();
             int m2value = m2.get(entry1.getKey()) == null ? -2 : m2.get(entry1.getKey());
-
             if (m1value != m2value) {
                 return false;
             }

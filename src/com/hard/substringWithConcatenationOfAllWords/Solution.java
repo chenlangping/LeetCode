@@ -32,19 +32,12 @@ public class Solution {
     //用所给的字符串，指定开始，并且指定每个单词的长度，来构造map
     public Map<String, Integer> getMap(int start, int wordLen, int numOfWord, String s) {
         String words[] = new String[numOfWord];
-        String tmp = "";
-        Map<String, Integer> map = new HashMap<>();
-        int cur = 1;
         int j = 0;
-        for (int i = start; i < start + wordLen * numOfWord; i++, cur++) {
-            tmp = tmp + s.charAt(i);
-            if (cur % wordLen == 0) {
-                words[j] = tmp;
-                j++;
-                tmp = "";
-            }
+        for (int i = start; i < start +numOfWord * wordLen; i = i + wordLen) {
+            words[j] = s.substring(i, i + wordLen);
+            j++;
         }
-        map = stringToMap(words, numOfWord);
+        Map<String, Integer> map = stringToMap(words, numOfWord);
         return map;
     }
 
@@ -66,7 +59,7 @@ public class Solution {
 
         Iterator<Map.Entry<String, Integer>> iter1 = m1.entrySet().iterator();
         while (iter1.hasNext()) {
-            Map.Entry<String, Integer> entry1 = (Map.Entry<String, Integer>) iter1.next();
+            Map.Entry<String, Integer> entry1 = iter1.next();
             int m1value = entry1.getValue() == null ? -1 : entry1.getValue();
             int m2value = m2.get(entry1.getKey()) == null ? -2 : m2.get(entry1.getKey());
 

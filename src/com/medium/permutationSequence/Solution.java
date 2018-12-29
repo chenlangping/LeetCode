@@ -20,7 +20,7 @@ public class Solution {
 
     private void recursion(int nums[], int[] cur, int[] des, String s[], List<Integer> tempList) {
         if (tempList.size() == nums.length) {
-            if (cur[0] == des[0]-1) {
+            if (cur[0] == des[0] - 1) {
                 StringBuilder sb = new StringBuilder();
                 for (int j = 0; j < tempList.size(); j++) {
                     sb.append(tempList.get(j));
@@ -43,10 +43,42 @@ public class Solution {
         }
     }
 
+    public String getPermutation2(int n, int k) {
+        List<Integer> numbers = new ArrayList<>();
+        int[] factorial = new int[n + 1];
+        StringBuilder sb = new StringBuilder();
+
+        // 创建阶乘数组
+        int sum = 1;
+        factorial[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            sum *= i;
+            factorial[i] = sum;
+        }
+        // factorial[] = {1, 1, 2, 6, 24, ... n!}
+
+
+        for (int i = 1; i <= n; i++) {
+            numbers.add(i);
+        }
+
+        //因为数组从0开始，所以第1个其实是第0个，所以需要k--
+        k--;
+
+        for (int i = 1; i <= n; i++) {
+            int index = k / factorial[n - i];
+            sb.append(String.valueOf(numbers.get(index)));
+            numbers.remove(index);
+            k -= index * factorial[n - i];
+        }
+
+        return String.valueOf(sb);
+    }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
         int n = 3;
         int k = 3;
-        System.out.println(solution.getPermutation(n, k));
+        System.out.println(solution.getPermutation2(n, k));
     }
 }

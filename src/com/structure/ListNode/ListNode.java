@@ -48,4 +48,21 @@ public class ListNode {
         }
         System.out.println(str);
     }
+
+    /**
+     * 求指定链表的长度
+     * @param listNode
+     * @return 链表的长度
+     */
+    public static int getListNodeLength(ListNode listNode) {
+        int length = 0;
+        if (listNode == null) {
+            return 0;
+        }
+        while (listNode != null) {
+            length++;
+            listNode = listNode.next;
+        }
+        return length;
+    }
 }

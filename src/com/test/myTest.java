@@ -8,11 +8,8 @@ public class myTest {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        ListNode listNode = ListNode.createTestData("1->2->3->4->5->6");
-        int k = 3;
-        ListNode.print(solution.reverseKGroup(listNode, k));
-
-
+        ListNode listNode = ListNode.createTestData("1");
+        System.out.println(ListNode.getListNodeLength(listNode));
     }
 
 

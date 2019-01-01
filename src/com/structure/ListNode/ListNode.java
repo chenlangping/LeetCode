@@ -1,7 +1,5 @@
 package com.structure.ListNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class ListNode {
     public int val;

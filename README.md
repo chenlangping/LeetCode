@@ -3,6 +3,7 @@
 
 #### 待优化：003 029 240 282 060
 
+### 2018年
 * [2018年7月27日    001<br>](https://www.jianshu.com/p/b5b44e9a82ae) 
 * [2018年7月29日    007<br>](https://www.jianshu.com/p/73d788502bcf)
 * [2018年7月30日    009<br>](https://www.jianshu.com/p/f631da0b7ea5)
@@ -105,3 +106,6 @@
 * [2018年12月28日    049<br>](https://www.jianshu.com/p/345e3cedc047)
 * [2018年12月29日    060<br>](https://www.jianshu.com/p/80abb4ebef86)
 * [2018年12月30日    061<br>](https://www.jianshu.com/p/3f4449ccbed0)
+
+### 2019年
+* [2019年1月1日    082<br>](https://www.jianshu.com/p/34f028e6dac4)

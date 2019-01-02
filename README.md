@@ -109,3 +109,4 @@
 
 ### 2019年
 * [2019年1月1日    082<br>](https://www.jianshu.com/p/34f028e6dac4)
+* [2019年1月2日    092<br>](https://www.jianshu.com/p/b69d01aef5dd)

@@ -14,12 +14,17 @@ public class TreeNode {
     }
 
     public static TreeNode createTestData(String data) {
-        if (data.equals("[]")) return null;
+        if (data.equals("[]")) {
+            return null;
+        }
+        //删除中括号
         data = data.substring(1, data.length() - 1);
+
+        //拆分
         String[] split = data.split(",");
-        int len = len = split.length;
+
+        int len = split.length;
         TreeNode[] treeNodes = new TreeNode[len];
-        data = data.substring(1, data.length() - 1);
         for (int i = 0; i < len; i++) {
             if (!split[i].equals("null")) {
                 treeNodes[i] = new TreeNode(Integer.valueOf(split[i]));

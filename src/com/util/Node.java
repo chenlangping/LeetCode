@@ -3,7 +3,10 @@ package com.util;
 public class Node {
     private Node previous;
     private Object object;
-    private Node next;
+    public Node next;
+
+    public Node left;
+    public Node right;
 
     public Node(Object object) {
         this.object = object;

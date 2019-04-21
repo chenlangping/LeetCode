@@ -4,7 +4,7 @@ import com.structure.ListNode.ListNode;
 
 public class Solution {
     public ListNode swapPairs(ListNode head) {
-        ListNode result = new ListNode();
+        ListNode result = new ListNode(0);
         result.next = head;
         ListNode cur = result;
         while (cur.next != null && cur.next.next != null) {

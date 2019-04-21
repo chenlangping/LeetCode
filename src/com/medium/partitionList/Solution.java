@@ -13,7 +13,7 @@ public class Solution {
         ListNode cur1 = big;
         ListNode cur2 = small;
         while (head != null) {
-            ListNode tmp = new ListNode();
+            ListNode tmp = new ListNode(0);
             tmp.val = head.val;
             if (tmp.val >= x) {
                 cur1.next = tmp;

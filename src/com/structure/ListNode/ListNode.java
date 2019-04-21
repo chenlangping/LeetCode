@@ -9,12 +9,10 @@ public class ListNode {
         val = x;
     }
 
-    public ListNode() {
-        val = 0;
-    }
-
     public static ListNode createTestData(String data) {
-        if (data.equals("")) return null;
+        if ("".equals(data)) {
+            return null;
+        }
         //用->作为分隔符
         String[] split = data.split("->");
         int len = split.length;
@@ -28,20 +26,28 @@ public class ListNode {
         return listNode[0];
     }
 
+    public static ListNode createTestData(int[] data) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int datum : data) {
+            stringBuilder.append("->").append(datum);
+        }
+        return createTestData(stringBuilder.toString().substring(2));
+    }
+
     /**
      * 打印一个指定链表的所有内容
      *
-     * @param listNode
+     * @param head 链表头部
      */
-    public static void print(ListNode listNode) {
-        if (listNode == null) {
+    public static void print(ListNode head) {
+        if (head == null) {
             System.out.println("null");
             return;
         }
-        StringBuilder str = new StringBuilder(String.valueOf(listNode.val));
-        ListNode p = listNode.next;
+        StringBuilder str = new StringBuilder(String.valueOf(head.val));
+        ListNode p = head.next;
         while (p != null) {
-            str.append("->").append(String.valueOf(p.val));
+            str.append("->").append(p.val);
             p = p.next;
         }
         System.out.println(str);
@@ -49,17 +55,18 @@ public class ListNode {
 
     /**
      * 求指定链表的长度
-     * @param listNode
+     *
+     * @param head 链表头部
      * @return 链表的长度
      */
-    public static int getListNodeLength(ListNode listNode) {
+    public static int getListNodeLength(ListNode head) {
         int length = 0;
-        if (listNode == null) {
+        if (head == null) {
             return 0;
         }
-        while (listNode != null) {
+        while (head != null) {
             length++;
-            listNode = listNode.next;
+            head = head.next;
         }
         return length;
     }

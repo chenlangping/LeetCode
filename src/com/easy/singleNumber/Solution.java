@@ -9,4 +9,10 @@ public class Solution {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] nums = {1, 2, 2, 3, 3, 4, 5, 4, 5};
+        System.out.println(solution.singleNumber(nums));
+    }
 }

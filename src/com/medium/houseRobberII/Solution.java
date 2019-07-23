@@ -1,7 +1,25 @@
-package com.easy.houseRobber;
+package com.medium.houseRobberII;
+
+import java.util.Arrays;
 
 public class Solution {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        int[] nums = {1, 2, 3, 1};
+        System.out.println(solution.rob(nums));
+    }
+
     public int rob(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        } else if (nums.length == 1) {
+            return nums[0];
+        }
+        // ensure that the length of array is 2 or more
+        return Math.max(robHelp(Arrays.copyOfRange(nums, 1, nums.length)), robHelp(Arrays.copyOfRange(nums, 0, nums.length - 1)));
+    }
+
+    public int robHelp(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }
@@ -20,12 +38,4 @@ public class Solution {
         }
         return Math.max(dp[nums.length - 1][0], dp[nums.length - 1][1]);
     }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] nums = {2, 7, 9, 3, 1};
-        System.out.println(solution.rob(nums));
-    }
-
-
 }
